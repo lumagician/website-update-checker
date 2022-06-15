@@ -6,15 +6,13 @@ hash_new = ""
 # check if hash.txt file already exists
 try:
     with open("./hash.txt", "r") as f:
+
         hash_old = f.readline()
-        
         hash_new = getDivContent()
-
-        if hash_old == hash_new:
-            print("no change")
-        else:
-            print("changed")
-
+        f.close()
+        print("read")
+    
+    with open("./hash.txt", "w") as f:
         f.write(hash_new)
         f.close()
 
@@ -22,4 +20,10 @@ try:
 except FileNotFoundError:
     with open("./hash.txt", "w") as f:
         f.write(getDivContent())
+        f.close()
+        print("file created")
 
+if hash_old == hash_new:
+    print("nothing changed")
+else:
+    print("website was updated")
