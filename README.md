@@ -1,6 +1,6 @@
 # website-update-checker
 
-Regularly checks if the content of the info page for the pre-duty cyber training has changed. Deployed on Linode on a light linux box. The python script is run regularly.
+Regularly checks if the content of the info page for the pre-duty cyber training has changed.
 
 ## instructions
 
