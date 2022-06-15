@@ -17,4 +17,7 @@ create .env file
 
     touch .env
 
-then add your ifttt key and event name 
+then add your ifttt key and event name as an env variable
+
+    IFTTT_KEY={key}
+    IFTTT_EVENT_NAME={event name}
